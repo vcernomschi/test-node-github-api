@@ -129,7 +129,8 @@ deeploy.json*
 **/frontend/vendor/
 
 # Tests resources
-GitDiffWalker.*
+GitDiffWalker.js
+GitHubPublisher.js
 _vars.sh
 /package.json
 **/.sass-cache/

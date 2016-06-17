@@ -71,7 +71,7 @@ fi
 ##########################################################
 ### Install skeleton dependecies if we are in skeleton ###
 ##########################################################
-if [ $(git config --get remote.origin.url) == "https://github.com/MitocGroup/deep-microservices-skeleton" ]; then
+if [ $(git config --get remote.origin.url) == "https://github.com/mikedeboer/node-github" ]; then
   sh $(dirname $0)/../tools/skeleton-install.sh
 fi
 
@@ -115,3 +115,5 @@ fi
 ############################################################################################
 deepify compile es6 $(dirname $0)/GitDiffWalker.es6 --source > $(dirname $0)/GitDiffWalker.js
 node $(dirname $0)/GitDiffWalker.js
+
+deepify compile es6 $(dirname $0)/GitHubPublisher.es6 --source > $(dirname $0)/GitHubPublisher.js
