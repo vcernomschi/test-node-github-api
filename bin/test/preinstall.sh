@@ -71,7 +71,7 @@ fi
 ##########################################################
 ### Install skeleton dependecies if we are in skeleton ###
 ##########################################################
-if [ $(git config --get remote.origin.url) == "https://github.com/mikedeboer/node-github" ]; then
+if [ $(git config --get remote.origin.url) == "https://github.com/vcernomschi/test-node-github-api" ]; then
   sh $(dirname $0)/../tools/skeleton-install.sh
 fi
 
