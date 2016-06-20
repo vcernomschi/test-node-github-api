@@ -3,6 +3,7 @@
 ###################################################
 ### Install dependencies locally if don't exist ###
 ###################################################
+(if [ ! -d "node_modules/github" ]; then npm install github; fi) &&\
 (if [ ! -d "node_modules/js-yaml" ]; then npm install js-yaml; fi) &&\
 (if [ ! -d "node_modules/inquirer" ]; then npm install inquirer@0.12.x; fi) &&\
 (if [ ! -d "node_modules/minimist" ]; then npm install minimist@1.2.x; fi) &&\
